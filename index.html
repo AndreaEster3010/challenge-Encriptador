@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.js">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <img  id="logo" src="img/Logo.png" alt="logo Alura">
+    </header>
+    <main>
+        <section class="secto1">
+            <textarea class="contenedor_texto" placeholder="Ingrese su texto aquí..."></textarea>
+                                          
+            <div class="advertencia">
+                <img src="img/signo.png" alt="signo atencion">
+                <p>Sólo letras minúsculas y sin acentos.</p>
+            </div>
+            <div class="contenedor_botones">
+                <input type="button" class="boton_encriptar" value="Encriptar" onclick="Encriptar()">
+                <input type="button" class="boton_desencriptar" value="Desencriptar" onclick="Desencriptar()">
+            </div>
+        </section>
+        <section class="sector2">
+            <div class="contenedor_munieco">
+                <img src="img/Muñeco.png" alt="munieco Alura">
+            </div>
+            <div class="contenedor_titulo">
+                <h3>Ningun mensaje fue encontrado.</h3>
+            </div>
+            <div class="contenedor_parrafo">
+                <p>Ingrese el texto que desea encriptar <br> o desencriptar</p>
+            </div>
+            <div class="contenedor_resultado">
+                <p></p>
+            </div>
+            <div class="contenedor_copiar">
+                <input type="button" class="boton_copiar" value="Copiar" onclick="copiar()">
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <h3>Challenge Alura G5 <br>*2023*</h3>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
